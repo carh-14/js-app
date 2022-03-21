@@ -1,0 +1,74 @@
+.contenedorJuego {
+    width: 400;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgb(226, 148, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedorJuego h3 {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(209, 67, 252);
+}
+
+.divJuegoHeader label {
+    font-size: 15px;
+    font-weight: bold;
+    display:inline-block;
+    padding-bottom: 10px;
+}
+
+.divJuegoLi {
+    margin-top: 10px;
+}
+.divJuegoLi label{
+    display:inline-block;
+    width: 180px;
+    font-size: 15px;
+}
+.divJuegoLi input{
+    margin-left: 10px;
+}
+input[type=button]{
+    background-color: blueviolet;
+    color: white;
+}
+.divJuegoLi input[type=button]:disabled{
+    background-color: rgb(201, 149, 250);
+    color: rgb(73, 71, 71);
+}
+.divJuegoLi img{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+input[type=text] {
+    width: 50px;
+}
+#divImgRes {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+.divResultado {
+    border-top: 1px solid black;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.resIntGanador {
+    background-color: rgb(7, 161, 7);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.resIntPerdedor {
+    background-color: red;
+    font-weight: bold;
+    font-size: 17px;
+}

@@ -3,7 +3,7 @@
         <title>Mi Blog Personal</title>
         <link rel="stylesheet" href="../css/estilosBlog.css">
         <link rel="stylesheet" href="../css/estilosJuegos.css">
-        <script src="../js/scriptsBlog.js"></script>
+        <script src="../js/scriptsJuego.js"></script>
     </head>
     <body>
         <header class="Encabezado">
@@ -21,17 +21,36 @@
             <div class="contenedorJuego">
                 <h3>Juego 1: Adivina Números</h3>
                 <form>
-                    <label>Click en tirar</label>
-                    <button id="juegoTirar" value="Tirar">Tirar</button>
-                    <label>Digite 3 intentos con el fin de adivinar el número oculto</label>
-                    <label>Digite primer intento</label>
-                    <input type="text">
-                    <label>Digite segundo intento</label>
-                    <input type="text">
-                    <label>Digite tercer intento</label>
-                    <input type="text">
-                    <label>Resultado</label>
-                    <label>-</label>
+                    <div class="divJuegoHeader">
+                        <label>Haz click aquí: </label>
+                        <input type="button" id="juegoTirar" value="Tirar" onclick="generarNumero()"><br>
+                        <input type="text" id="randomNum" hidden="true">
+                        <label>Digite 3 números [0-10] con el fin de adivinar el número oculto</label>
+                    </div>
+                    <div class="divJuegoLi">
+                        <label>Digite primer intento</label>
+                        <input type="text" id="num1" disabled="true">
+                        <input type="button" id="btnP1"  value ="Probar" disabled="true" onclick="validarIntento(1)">
+                        <img id="imgRes1" src="../img/question.png">
+                    </div>
+                    <div class="divJuegoLi">
+                        <label>Digite segundo intento</label>
+                        <input type="text" id="num2" disabled="true">
+                        <input type="button" id="btnP2" disabled="true" value="Probar" onclick="validarIntento(2)">
+                        <img id="imgRes2" src="../img/question.png">
+                    </div>
+                    <div class="divJuegoLi">
+                        <label>Digite tercer intento</label>
+                        <input type="text" id="num3" disabled="true">
+                        <input type="button" id="btnP3" disabled="true" value="Probar" onclick="validarIntento(3)">
+                        <img id="imgRes3" src="../img/question.png">
+                    </div>
+                    <div class="divResultado">
+                        <label>Resultado</label>
+                        <label  id="resultadoInt">-</label> <br>
+                        <label>Número Secreto: </label>
+                        <label id="numSecreto"> XXX </label>
+                    </div>
                 </form>
             </div>
         </section>
