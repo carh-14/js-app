@@ -2,7 +2,7 @@ function crearRecordatorio() {
     var divRec = document.getElementById("recordatorioContent");
     var divNewRec = document.createElement("div");
     var txtAreaValue = document.getElementById("txtRecordatorio").value;
-    var pNewRec = document.createElement("p");
+    var pNewRec = document.createElement("label");
     var txtNewRec =document.createTextNode(txtAreaValue);
     pNewRec.appendChild(txtNewRec);
     divNewRec.classList.add("divAside");

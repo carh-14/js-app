@@ -8,6 +8,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.mainContent {
+    height: 80%;
+    background-color: rgb(180, 199, 228);
+}
+
 .contenedorJuego h3 {
     padding: 5px;
     text-align: center;
@@ -32,7 +37,7 @@
 .divJuegoLi input{
     margin-left: 10px;
 }
-input[type=button]{
+.divJuegoLi input[type=button]{
     background-color: blueviolet;
     color: white;
 }
@@ -90,11 +95,12 @@ img {
     background-color: rgb(67, 215, 252);
 }
 .opcionLoader {
-    width: 180px;
+    width: 170px;
     height: 150px;
     float: left;
     margin-top: 10px;
-    border: 1px solid black;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .imgLoader {
@@ -103,7 +109,6 @@ img {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
-    border: 1px solid black;
 }
 
 .imgLoader img {
@@ -112,13 +117,47 @@ img {
 	display:block;
     width: 170px ;
     height: 100px;
+    border: 1px solid black;
 }
 
-.test{
-    background-color: blueviolet;
-}
+
 .resJuego2 {
     clear: both;
     padding-top: 19px;
     border-top: 1px solid black;
 }
+
+.opcionLoader input[type=button]{
+    margin-top: 5px;
+    width: 160px;
+    height: 22px;
+    float:left;
+    border: 1px solid black;
+}
+
+.btnOpcion {
+    color: black;
+    background-color: aquamarine;
+
+}
+
+.btnOpCorrecta {
+    background-color: rgb(5, 119, 15);
+    color: white;
+}
+
+.btnOpIncorrecta {
+    background-color: rgb(119, 13, 5);
+    color: white;
+}
+
+.btnOpDisabled {
+    background-color: rgb(165, 163, 163);
+    color: black;
+
+}
+.opcionLoader input[type=button]:hover:not([disabled]) {
+    background-color: rgb(236, 255, 127);
+    border: 1px solid rgb(5, 7, 32);
+}
+

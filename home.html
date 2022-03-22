@@ -10,56 +10,62 @@
         </header>
         <nav class="navMenu">
             <ul>
-                <li><a href="./home.html">Posts</a></li>
-                <li>Amigos</li>
+                <li><a href="../home.html">Posts</a></li>
                 <li><a href="html/juegos.html">Juegos</a></li>
-                <li>Links</li>
             </ul>
         </nav>
-        <section class="seccionArticulo">
-            <article>
-                <section class="seccionField">
-                    <fieldset>
-                        <legend>Agrega una nueva entrada</legend>
-                        <detail>
-                            <form>
-                                <label>Titulo</label>
-                                <input type="text" id="txtEntTitulo"><br>
-                                <label>Contenido</label>
-                                <textarea id="txtEntContenido"></textarea><br>
-                                <input type="button" value="Agregar" onclick="crearEntrada()">
-                            </form>
-                        </detail>
-                    </fieldset>
-                </section>
-                <div id="entradaContent">
-                    <section class="seccionArt">
-                        <p>Mi Articulo 1</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos vitae delectus corporis molestiae necessitatibus sapiente perspiciatis inventore sequi illo modi, ab exercitationem quidem recusandae fugit deserunt, accusamus et a.</p>
+        <section class="mainContent">
+            <section class="seccionArticulo">
+                <article>
+                    <section class="seccionField">
+                        <fieldset>
+                            <legend>Agrega una nueva entrada</legend>
+                            <detail>
+                                <form>
+                                    <label>Titulo</label>
+                                    <input type="text" id="txtEntTitulo"><br>
+                                    <label>Contenido</label>
+                                    <textarea id="txtEntContenido"></textarea><br>
+                                    <input type="button" value="Agregar" onclick="crearEntrada()">
+                                </form>
+                            </detail>
+                        </fieldset>
                     </section>
-                    <section class="seccionArt">
-                        <p>Mi Articulo 2</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa explicabo enim eveniet quaerat, molestias rerum debitis iure consectetur tenetur assumenda laborum ratione cum minus eos alias modi illum ab labore?</p>
-                    </section>
-                </div>
-            </article>
-        </section>
-        <aside class="seccionAside">
-                <p>Recordatorios</p>
-                <div id="recordatorioContent">
-                    <div class="divAside">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci earum placeat ea eum iste! Optio possimus quaerat esse debitis tempora, ut placeat vitae, doloribus in, quibusdam vel delectus natus!</p>
+                    <div id="entradaContent">
+                        <section class="seccionArt">
+                            <p>Mi Articulo 1</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos vitae delectus corporis molestiae necessitatibus sapiente perspiciatis inventore sequi illo modi, ab exercitationem quidem recusandae fugit deserunt, accusamus et a.</p>
+                        </section>
+                        <section class="seccionArt">
+                            <p>Mi Articulo 2</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa explicabo enim eveniet quaerat, molestias rerum debitis iure consectetur tenetur assumenda laborum ratione cum minus eos alias modi illum ab labore?</p>
+                        </section>
                     </div>
-                </div>
-                <div class="formRecordatorio">
-                    <form name="recordatorio">
-                        <textarea id="txtRecordatorio"></textarea>
-                        <input type="button" value="+" onclick="crearRecordatorio()">
-                    </form>
-                </div>
-        </aside>
-        <footer class="seccionFooter">
-            Módulo I : Javascript, CSS y HTML5, 2022
+                </article>
+            </section>
+            <aside class="seccionAside">
+                    <p>Recordatorios</p>
+                    <div id="recordatorioContent">
+                        <div class="divAside">
+                            <label>Ir al supermercado</label>
+                        </div>
+                        <div class="divAside">
+                            <p>Pagar facturas</p>
+                        </div>
+                    </div>
+                    <div class="formRecordatorio">
+                        <form name="recordatorio">
+                            <textarea id="txtRecordatorio"></textarea>
+                            <input type="button" value="+" onclick="crearRecordatorio()">
+                        </form>
+                    </div>
+            </aside>
+        </section>
+        <footer id="footer">
+            <div class="seccionFooter">
+                Módulo I : Javascript, CSS y HTML5, 2022<br>
+                ® Cesar Ramírez
+            </div>
         </footer>
     </body>
 </html>

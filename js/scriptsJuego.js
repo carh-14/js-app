@@ -1,5 +1,7 @@
-function generarNumero() {
+function generarNumeroJ1() {
+    alert("entra?");
     var numRandom = randomInt();
+    
     document.getElementById("randomNum").value = numRandom;
     document.getElementById("num1").disabled = false;
     document.getElementById("btnP1").disabled = false;

@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="../css/estilosBlog.css">
         <link rel="stylesheet" href="../css/estilosJuegos.css">
         <script src="../js/scriptsJuego.js"></script>
+        <script src="../js/scriptJuego2.js"></script>
     </head>
     <body>
         <header class="Encabezado">
@@ -12,18 +13,16 @@
         <nav class="navMenu">
             <ul>
                 <li><a href="../home.html">Posts</a></li>
-                <li>Amigos</li>
-                <li>Juegos</li>
-                <li>Links</li>
+                <li><a href="juegos.html">Juegos</a></li>
             </ul>
         </nav>
-        <section>
+        <section class="mainContent">
             <div class="contenedorJuego">
                 <h3>Juego 1: Adivina Números</h3>
                 <form>
                     <div class="divJuegoHeader">
                         <label>Haz click aquí: </label>
-                        <input type="button" id="juegoTirar" value="Tirar" onclick="generarNumero()"><br>
+                        <input type="button" id="juegoTirar" value="Tirar" onclick="generarNumeroJ1()"><br>
                         <input type="text" id="randomNum" hidden="true">
                         <label>Digite 3 números [0-10] con el fin de adivinar el número oculto</label>
                     </div>
@@ -57,30 +56,34 @@
                 <h3>Juego 2: Adivina Pais</h3>
                 <div>
                     <label>Adivina la bandera del país. Haz click en el botón para comenzar</label>
-                    <input type="button" value="Comenzar">
+                    <input type="button" id="comenzarJuego2" value="Comenzar" onclick="iniciarJuego2()">
                 </div>
-                <div class="test">
+                <label id="nRandom" hidden="true">-</label>
+                <div id="loaderContainer" hidden="true">
                     <div class="opcionLoader">
-                        <ul>
-                            <li><a>Alemania</a></li>
-                            <li><a>Australia</a></li>
-                            <li><a>El Salvador</a></li>
-                            <li><a>México</a></li>
-                            <li><a>Sudáfrica</a></li>
-                        </ul>
+                        <form>
+                            <input type="button" id="opcion1" class="btnOpcion" onclick="verificarOpcion('1')" value="Alemania">
+                            <input type="button" id="opcion2" class="btnOpcion" onclick="verificarOpcion('2')" value="Australia">
+                            <input type="button" id="opcion3" class="btnOpcion" onclick="verificarOpcion('3')" value="El Salvador">
+                            <input type="button" id="opcion4" class="btnOpcion" onclick="verificarOpcion('4')" value="México">
+                            <input type="button" id="opcion5" class="btnOpcion" onclick="verificarOpcion('5')" value="Sudáfrica">
+                        </form>
                     </div>
                     <div class="imgLoader">
-                        <img src="../img/2.png">
+                        <img id="imgJuego2" src="../img/2.png">
                     </div>
                 </div>
-                <div class="resJuego2">
-                    <label>Total de aciertos: </label>
-                    <label> XXX </label>
+                <div id="resJuego2" class="resJuego2" hidden="true">
+                    <label>Resultado: </label>
+                    <label id="valAciertos"> - </label>
                 </div>
             </div>
         </section>
-        <footer class="seccionFooter">
-            Módulo I : Javascript, CSS y HTML5, 2022
+        <footer id="footer" >
+            <div class="seccionFooter">
+                Módulo I : Javascript, CSS y HTML5, 2022<br>
+                ® Cesar Ramírez
+            </div>
         </footer>
     </body>
 </html>
